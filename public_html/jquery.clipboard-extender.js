@@ -57,7 +57,6 @@
 
             finalTemplate += template + (data.separator ? data.separator : "") + advertisement;
 
-            // tempContainer.appendChild($.parseHTML(finalTemplate));
             $(tempContainer).append($.parseHTML(finalTemplate));
             document.getSelection().removeAllRanges();
 
@@ -84,7 +83,7 @@
             }
 
         }
-        // document.addEventListener("paste", pasteAction);
+
         document.addEventListener("copy", copyAction);
 
     };
