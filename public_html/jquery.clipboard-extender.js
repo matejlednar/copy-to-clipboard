@@ -81,10 +81,7 @@
             } finally {
                 document.body.removeChild(tempContainer);
             }
-
         }
-
         document.addEventListener("copy", copyAction);
-
     };
 }(jQuery));
