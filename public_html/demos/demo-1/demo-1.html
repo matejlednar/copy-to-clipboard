@@ -6,24 +6,22 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Copy to clipboard</title>
+        <title>Copy to clipboard - Demo 1</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="jquery.clipboard-extender.js"></script>
+        <script src="../../jquery.clipboard-extender.js"></script>
     </head>
     <body>
-        <h1>Copy to clipboard</h1>
+        <h1>Copy to clipboard - Demo 1</h1>
         <script>
             $(document).ready(function () {
 
                 var clipBoardData = {
                     url: "http://how-to.mldgroup.com/",
-                    extendedText : "Copied from How to ...",
+                    extendedText : "(Copied from How to ... website)",
                     extendedURL : "http://how-to.mldgroup.com/",
-                    separator : "<br>",
-                    mainStyle : "font-weight:bold; color:black; text-decoration:none;",
-                    extendedStyle : "font-style:italic; color:gray;"
+                    separator : " "
                 }
                 $().clipboardExtender(clipBoardData);
 
