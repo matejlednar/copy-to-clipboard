@@ -31,7 +31,13 @@
             var mainStyle = data.mainStyle ? "style='" + data.mainStyle + "'" : "";
             var extendedStyle = data.extendedStyle ? "style='" + data.extendedStyle + "'" : "";
             var selectedText = document.getSelection().toString();
-            var template = '<a ' + mainStyle + ' href="' + data.url + '">' + selectedText + '</a>';
+            var template = "";
+            if (data.url) {
+                template = '<a ' + mainStyle + ' href="' + data.url + '">' + selectedText + '</a>';
+            }
+            else {
+                template = selectedText;
+            }
             var finalTemplate = "";
             var advertisement = "";
 
